@@ -11,17 +11,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import static com.upeu.akademico.akademico.R.id.textAkademico;
-
 public class Login extends AppCompatActivity {
 
-
+    TextView textLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        textLogin = (TextView)findViewById(R.id.textLogin);
+        String font_path = "fonts/Moonlights.ttf";
+        Typeface fuente = Typeface.createFromAsset(getAssets(),font_path);
+        textLogin.setTypeface(fuente);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

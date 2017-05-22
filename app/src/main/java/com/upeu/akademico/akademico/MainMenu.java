@@ -1,5 +1,6 @@
 package com.upeu.akademico.akademico;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -93,7 +94,10 @@ TextView text;
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_login) {
+            Intent login = new Intent(MainMenu.this,Login.class);
+            startActivity(login);
+            return true;
             // Handle the camera action
         }
         else if (id == R.id.nav_gallery) {
