@@ -17,7 +17,7 @@
         android:id="@+id/textAkademico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:layout_weight="0.76"
         android:text="@string/PedroKalbermater" />
 </LinearLayout>
