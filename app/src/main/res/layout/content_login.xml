@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
+    android:orientation="horizontal"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.upeu.akademico.akademico.Login"
     tools:showIn="@layout/activity_login">
@@ -12,10 +13,51 @@
 
     <TextView
         android:id="@+id/textLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Login"
         android:textAlignment="center"
-        android:textSize="40sp" />
-</LinearLayout>
+        android:textSize="55sp" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="30"
+        android:hint="@string/userName"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editUserName"
+        android:layout_alignRight="@+id/editUserName"
+        android:layout_below="@+id/editUserName"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="30"
+        android:hint="@string/password"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:padding="7dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:padding="7dp"
+        android:text="@string/Log_in"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
