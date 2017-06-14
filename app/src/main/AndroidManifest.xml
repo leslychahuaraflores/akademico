@@ -12,7 +12,7 @@
         <activity
             android:name=".Login"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_main_menu"
@@ -24,8 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainLivingRoom"
-            android:label="@string/title_activity_main_living_room"
+            android:name=".grade.MainSecondary"
+            android:label="@string/title_activity_main_secondary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".grade.MainPrimary"
+            android:label="@string/title_activity_main_primary"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

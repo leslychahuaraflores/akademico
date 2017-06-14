@@ -3,8 +3,6 @@ package com.upeu.akademico.akademico;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -12,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.upeu.akademico.akademico.grade.MainPrimary;
 
 public class Login extends AppCompatActivity {
 
@@ -29,19 +29,10 @@ public class Login extends AppCompatActivity {
         Typeface fuente = Typeface.createFromAsset(getAssets(),font_path);
         textLogin.setTypeface(fuente);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainLivingRoom.class));
+                startActivity(new Intent(getApplicationContext(), MainPrimary.class));
             }
         });
     }
