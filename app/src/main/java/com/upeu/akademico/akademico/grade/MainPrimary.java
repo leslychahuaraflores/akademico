@@ -36,9 +36,12 @@ public class MainPrimary extends AppCompatActivity {
         spinner.setAdapter(new MyAdapter(
                 toolbar.getContext(),
                 new String[]{
-                        "Section 1",
-                        "Section 2",
-                        "Section 3",
+                        "Primer Grado",
+                        "Segundo Grado",
+                        "Tercer Grado",
+                        "Cuarto Grado",
+                        "Quinto Grado",
+                        "Sexto Grado",
                 }));
 
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {

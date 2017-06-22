@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:background="@drawable/fondo3"
     android:orientation="horizontal"
+    android:scaleType="centerCrop"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.upeu.akademico.akademico.Login"
     tools:showIn="@layout/activity_login">
@@ -16,8 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:textColor="@color/colorWhite"
         android:textAlignment="center"
-        android:textSize="55sp" />
+        android:textSize="55sp"
+        android:layout_marginTop="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editUserName"
@@ -29,35 +35,35 @@
         android:background="@drawable/borde_redondo"
         android:ems="30"
         android:hint="@string/userName"
-        android:textAlignment="center"
         android:inputType="textPersonName"
-        android:padding="7dp" />
+        android:padding="7dp"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editUserName"
-        android:layout_alignRight="@+id/editUserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/editUserName"
         android:layout_marginTop="47dp"
         android:background="@drawable/borde_redondo"
         android:ems="30"
         android:hint="@string/password"
-        android:textAlignment="center"
         android:inputType="textPersonName"
-        android:padding="7dp"/>
+        android:padding="7dp"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/btnLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
         android:background="@drawable/borde_redondo"
         android:ems="10"
         android:padding="7dp"
-        android:text="@string/Log_in"
-        android:layout_below="@+id/editPassword"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/Log_in" />
 
 </RelativeLayout>
